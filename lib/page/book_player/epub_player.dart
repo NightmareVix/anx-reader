@@ -924,7 +924,7 @@ class EpubPlayerState extends ConsumerState<EpubPlayer>
   }
 
   Future<void> _handlePointerEvents(PointerEvent event) async {
-    if (await isFootNoteOpen() || Prefs().pageTurnStyle == PageTurn.scroll) {
+    if (await isFootNoteOpen()) {
       return;
     }
     // Disable scroll wheel page turning when keyboard shortcuts are enabled

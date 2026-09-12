@@ -23,17 +23,11 @@ import 'package:flutter_colorpicker/flutter_colorpicker.dart';
 
 enum PageTurn {
   noAnimation,
-  slide,
-  scroll;
 
   String getLabel(BuildContext context) {
     switch (this) {
       case PageTurn.noAnimation:
         return L10n.of(context).noAnimation;
-      case PageTurn.slide:
-        return L10n.of(context).slide;
-      case PageTurn.scroll:
-        return L10n.of(context).scroll;
     }
   }
 }
