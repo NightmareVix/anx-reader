@@ -843,6 +843,7 @@ export class Paginator extends HTMLElement {
       })
   }
   #onTouchStart(e) {
+    if (!this.hasAttribute('animated')) return
     const touch = e.changedTouches[0]
     const scrollProp = this.scrollProp
     this.#touchState = {
@@ -871,6 +872,7 @@ export class Paginator extends HTMLElement {
     }))
   }
   #onTouchMove(e) {
+    if (!this.hasAttribute('animated')) return
     if (window.getSelection()?.toString()) return
 
     const touch = e.changedTouches[0]
