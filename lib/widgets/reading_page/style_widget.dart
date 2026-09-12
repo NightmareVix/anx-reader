@@ -22,7 +22,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_colorpicker/flutter_colorpicker.dart';
 
 enum PageTurn {
-  noAnimation,
+  noAnimation;
 
   String getLabel(BuildContext context) {
     switch (this) {
